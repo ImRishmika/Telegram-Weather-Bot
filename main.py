@@ -119,21 +119,21 @@ class WebhookHandler(webapp2.RequestHandler):
             if text:            # for text inputs
                 if text.startswith('/'):    # check if command
                     if text.lower() == '/start':
-                        responseController.sendTextMessage(chat_id, '@Weathercast_Bot started\nPlease enter the city name as \'text\' or send as \'location\'\nComing features:\n Forecast for next day(s)\n Daily notification \n\n->City,Country\n->Location')
+                        responseController.sendTextMessage(chat_id, '👋 Hello !\n\n☘ Please enter the city name as **Text** or send as **location**\nComing features:\n Forecast for next day(s)\n 🌞 Daily notification \n\n->City,Country\n->Location \n\n 👨‍💻 Devoloper :- @ImRishmika \n ☘ Powerd By @EmoBotDevolopers')
                         setEnabled(chat_id, True)
 
                     elif text.lower() == '/stop':
-                        responseController.sendTextMessage(chat_id, 'Bot disabled')
+                        responseController.sendTextMessage(chat_id, 'Bot Stoped !')
                         setEnabled(chat_id, False)
 
                     elif text.lower() == '/help':
-                        responseController.sendTextMessage(chat_id, 'Write as city,country or just send your location easily')
+                        responseController.sendTextMessage(chat_id, '✍ Write as city,country or just send your location easily')
 
                     elif text.lower().startswith('/weather'):
-                        responseController.sendTextMessage(chat_id, 'Please enter city name or send location coordinates directly')
+                        responseController.sendTextMessage(chat_id, '🤘 Please enter city name or send location coordinates directly')
                         
                     else:
-                        responseController.sendTextMessage(chat_id, 'Enter from available commands')
+                        responseController.sendTextMessage(chat_id, '❌ Enter from available commands')
                         return
                 
 
@@ -145,7 +145,7 @@ class WebhookHandler(webapp2.RequestHandler):
 
                     else:
                         logging.info('not enabled for chat_id {}'.format(chat_id))
-                        responseController.sendTextMessage(chat_id, 'Please enable bot by writing /start')
+                        responseController.sendTextMessage(chat_id, '📛 Please enable bot by writing /start')
 
 
                 return
@@ -156,7 +156,7 @@ class WebhookHandler(webapp2.RequestHandler):
 
         else:                   # no meaningful input, EXIT!
             logging.info('no text or location from user')
-            responseController.sendTextMessage(chat_id, 'Enter your location by text or map')
+            responseController.sendTextMessage(chat_id, '☘ Enter your location by text or map')
             return
 
 
