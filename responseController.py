@@ -22,7 +22,7 @@ defaultEmoji = u'\U0001F300'    # default emojis
 
 ###
 
-TOKEN = '58737283:AAGB3v1c27r_rgsur5nCfc53gndhKg9iR_8'
+TOKEN = '5609843753:AAGy-TBoxVNhuu5xNRachZ7dzJCwwXtpZTM'
 
 BASE_URL = 'https://api.telegram.org/bot' + TOKEN + '/'
 
