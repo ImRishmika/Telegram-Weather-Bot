@@ -23,7 +23,7 @@ import webapp2
 
 ######## GLOBAL VARIABLES ########
 
-TOKEN = 'BOT_TOKEN_COMES_HERE'
+TOKEN = '5609843753:AAGy-TBoxVNhuu5xNRachZ7dzJCwwXtpZTM'
 
 BASE_URL = 'https://api.telegram.org/bot' + TOKEN + '/'
 
